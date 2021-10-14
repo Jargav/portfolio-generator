@@ -11,13 +11,27 @@ const inquirer = require('inquirer');
 
  // console.log('portfolio complete! Check out index.html to see the output!');
 //});
-
-inquirer
-  .prompt([
+const promptUser = () => {
+  return inquirer.prompt([
     {
       type: 'input',
       name: 'name',
       message: 'What is your name?'
     }
   ])
-  .then(answeres => console.log(answers));
+};
+  promptUser().then(answers => console.log(answers));
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
